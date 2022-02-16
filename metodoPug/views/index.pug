@@ -1,0 +1,17 @@
+extends layout/base.pug
+block content
+    h1 Lista de productos
+
+    table 
+        thead 
+            tr 
+                td Artículo     
+                td Precio 
+                td Imagen 
+        tbody 
+            each p in listado           
+                tr
+                    td=p.title
+                    td=p.price
+                    td  
+                        img(width="150"  src=p.thumbnail)

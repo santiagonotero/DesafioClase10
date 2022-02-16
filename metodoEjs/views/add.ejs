@@ -1,0 +1,22 @@
+<html>
+    <%- include('layout/base') %>
+<body>
+    <p>Ingrese un producto</p>
+    <form action="/add" method="post">
+        <div>
+            <label for="title">Artículo</label>
+            <input name="title" type="text">
+        </div>
+        <div>
+            <label for="price">Precio</label>
+            <input name="price" type="number">
+        </div>
+        <div>
+            <label for="thumbnail">Link de la imagen</label>
+            <input name="thumbnail" type="text">
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
