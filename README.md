@@ -1,6 +1,6 @@
 ¿Qué método me pareció mejor?
 
-- Handlebars no, ya que la forma de armar todo requiere muccho código y es muy difícil de hacerlo funcionar.
+- Handlebars no, ya que la forma de armar todo requiere mucho código y es muy difícil de hacerlo funcionar.
 
 - Pug y Ejs son mil veces mejores para mí. Los prefiero.
 
