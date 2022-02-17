@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <a href="/"><li>Inicio</li></a>
+        <a href="/add"><li>Agregar objeto</li></a>
+      </ul>
+    </div>
+  <p>Listado de productos</p>
+    <table>
+      <thead>
+        <tr>
+          <td>Artículo</td>
+          <td>Precio</td>
+          <td>Imagen</td>
+        </tr>
+      </thead>
+      <tbody>
+          {{#each listado}}
+          <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.price}}</td>
+            <td><img src={{this.thumbnail}} alt=""></td>
+          {{/each}}
+          </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
